@@ -31,7 +31,6 @@ class App < Sinatra::Base
 
     result = @num1 + @op + @num2
     binding.pry
-    result.to_s
 
   end
 
