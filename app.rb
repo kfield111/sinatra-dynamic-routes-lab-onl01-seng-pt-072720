@@ -13,7 +13,7 @@ class App < Sinatra::Base
 
   get 'say/:number/:phrase' do
     times_to_multiply = params[:number].to_i
-    times {puts "#{params[:phrase]}"}
+    times_to_multiply.times {puts "#{params[:phrase]}"}
   end
 
   get 'say/:word1/:word2/:word3/:word4/:word5' do
