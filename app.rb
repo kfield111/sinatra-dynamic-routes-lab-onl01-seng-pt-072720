@@ -29,8 +29,6 @@ class App < Sinatra::Base
     @op = params[:operation].gsub(/\A"|"\z/,’’)
     @num2 = params[:number2].to_i
 
-
-    result = @num1 + @op + @num2
     binding.pry
 
   end
