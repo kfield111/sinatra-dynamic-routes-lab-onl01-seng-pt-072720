@@ -1,3 +1,4 @@
+require 'pry'
 require_relative 'config/environment'
 
 class App < Sinatra::Base
@@ -29,6 +30,7 @@ class App < Sinatra::Base
     @num2 = params[:number2].to_i
 
     result = @num1 + @op + @num2
+    binding.pry
     result.to_s
 
   end
