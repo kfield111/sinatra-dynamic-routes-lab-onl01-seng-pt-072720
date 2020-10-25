@@ -20,7 +20,7 @@ class App < Sinatra::Base
   end
 
   get '/:operation/:number1/:number2' do
-    result = param[number1] param[operation] param[number2]
+    result = params[number1] params[operation] params[number2]
     result.to_s
   end
 
